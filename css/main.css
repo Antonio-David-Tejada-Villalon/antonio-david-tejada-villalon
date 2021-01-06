@@ -5,3 +5,10 @@ body{
   margin: 0;
   color: #444;
 }
+
+header {
+  display: block;
+  display: grid;
+  grid-template-columns: 110px auto;
+  align-items: center;
+}
