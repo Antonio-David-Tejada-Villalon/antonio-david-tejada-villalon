@@ -9,37 +9,49 @@
       content="Assignment portal for Antonio David Tejada Villalon in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
     />
     <title>WDD230 W01</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/currentDate.js"></script>
   </head>
   <body>
     <div>
-    <header>
-      <div class="header0">
-        Antonio David Tejada Villalon
-      </div>
-    </header>
-    <main>
-      <div class="header1">
-        <h1>WDD230: Assignment Portal</h1>
-        <hr class="underline">
-      </div>
+      <header>
+        <div class="header0">Antonio David Tejada Villalon</div>
+      </header>
+      <main>
+        <div class="header1">
+          <h1>WDD230: Assignment Portal</h1>
+          <hr class="underline" />
+        </div>
         <div class="list1">
           <ul>
-          <li>Lesson 02: <a href="./">Assignment Link</a></li>
-          <li>Lesson 03: <a href="./">Assignment Link</a></li>
-          <li><div class="inside0">Lesson 04: <a href="./">Link</a><div class="seconda">| <a href="./">Link</a></div></div></li>
-        </ul>
-      </div>
-      <div>
-        <img src="img/AntonioDavidTejadaVillalonPhoto.png" alt="Picture of me">
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2020</p> 
-      <p>Antonio David Tejada Villalon</p>
-      <p>San Juan</p>
-      <p class="lastfooter"><a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-    </footer>
-  </div>
+            <li>Lesson 02: <a href="./">Assignment Link</a></li>
+            <li>Lesson 03: <a href="./">Assignment Link</a></li>
+            <li>
+              <div class="inside0">
+                Lesson 04: <a href="./">Link</a>
+                <div class="seconda">| <a href="./">Link</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            class="image"
+            src="img/AntonioDavidTejadaVillalonPhoto.png"
+            alt="Picture of me"
+          />
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2021</p>
+        <p>Antonio David Tejada Villalon</p>
+        <p>San Juan</p>
+        <p class="lastfooter">
+          <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p>
+        <!-- javascript insert - dymanically add date and time of last github update (id='update') -->
+        <p>Last Updated: <span id="update"></span></p>
+      </footer>
+    </div>
   </body>
 </html>

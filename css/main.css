@@ -78,13 +78,16 @@ h1 {
 }
 
 img {
-  grid-area: 'combine';
-  grid-column: 4/6;
-  padding-left: 3.5rem;
+  grid-area: 'overlap';
+  padding-left: auto;
   align-content: center;
   width: 10rem;
   height: 11rem;
-  border-radius: .5rem;
+}
+
+.image{
+  border-radius: 10% 10% 10% 10%;
+  border-shadow: 1px 1px 1px black;
 }
 
 footer {
