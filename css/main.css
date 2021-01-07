@@ -54,6 +54,7 @@ h1{
   grid-template-areas: 'overlap';
   grid-row: 2/3;
   grid-column: 1/6;
+  margin-bottom: 5rem;
 }
 
 .inside0{
@@ -66,7 +67,7 @@ h1{
   grid-row: 2/3;
   grid-column: 1/5;
   margin-left: 8.6rem;
-  margin-top: -1.9rem;
+  margin-top: -1.3rem;
 }
 
 .verticalline2{
@@ -110,6 +111,5 @@ footer{
 }
 
 .lastfooter{
-  grid-row: 4/6;
-  margin-right: 5rem;
+  grid-column: 4/6;
 }
