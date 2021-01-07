@@ -88,6 +88,7 @@ img {
 .image{
   border-radius: 10% 10% 10% 10%;
   border-shadow: 1px 1px 1px black;
+  margin-left: 3.5rem;
 }
 
 footer {
