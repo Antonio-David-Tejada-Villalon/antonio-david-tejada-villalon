@@ -70,7 +70,7 @@ h1{
   margin-top: -1.3rem;
 }
 
-.verticalline2{
+.verticalline1{
   grid-area: 'overlap';
   grid-row: 2/3;
   grid-column: 1/5;
