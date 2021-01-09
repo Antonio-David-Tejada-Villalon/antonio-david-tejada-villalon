@@ -1,4 +1,4 @@
-const daynames = [
+/*const daynames = [
 	"Sunday",
 	"Monday",
 	"Tuesday",
@@ -24,9 +24,6 @@ const dayNames = daynames[todaysdate.getDay()];
 const monthNames = months[todaysdate.getMonth()];
 const currentdate = dayNames + ", " + todaysdate.getDate() + " " + monthNames + ", " + todaysdate.getFullYear();
 document.getElementById("currentdate").textContent = currentdate;
-document.getElementById("currentyear").textContent = todaysdate.getFullYear();
-const hour = todaysdate.getHours();
-const min = todaysdate.getMinutes();
-const sec = todaysdate.getSeconds();
-const time = hour + ":" + min + ":" + sec;
-document.getElementById("time").textContent = time;
+document.getElementById("currentyear").textContent = todaysdate.getFullYear();*/
+const lastmodification = document.querySelector('#time');
+lastmodification.textContent = document.lastModified;
