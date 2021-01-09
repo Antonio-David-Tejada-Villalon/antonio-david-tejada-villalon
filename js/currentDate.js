@@ -5,8 +5,7 @@ const daynames = [
 	"Wednesday",
 	"Thursday",
 	"Friday",
-	"Saturday"
-];
+	"Saturday",];
 const months = [
 	"January",
 	"February",
@@ -19,22 +18,15 @@ const months = [
 	"September",
 	"October",
 	"November",
-	"December"
-];
-const d = new Date();
-const dayName = daynames[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-const fulldate = dayName + ", " + monthName + " " + d.getDate() +", " + year;
-//const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.getElementById('#update').textContent = fulldate;
-
-// ****************************
-try {
-  const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-  document.getElementById('update').textContent = new Date().toLocaleDateString('en-US', options);
-} catch (e) {
-  alert('Error with code or your browser does not support Locale');
-}
-
-// problem with toLocaleDateString order ... 
+	"December",];
+const todaysdate = new Date();
+const dayNames = daynames[todaysdate.getDay()];
+const monthNames = months[todaysdate.getMonth()];
+const currentdate = dayNames + ", " + todaysdate.getDate() + " " + monthNames + ", " + todaysdate.getFullYear();
+document.getElementById("currentdate").textContent = currentdate;
+document.getElementById("currentyear").textContent = todaysdate.getFullYear();
+const hour = todaysdate.getHours();
+const min = todaysdate.getMinutes();
+const sec = todaysdate.getSeconds();
+const time = hour + ":" + min + ":" + sec;
+document.getElementById("time").textContent = time;
