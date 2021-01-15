@@ -2,7 +2,9 @@ body {
   background-color: azure;
   font-size: 18px;
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, 'Oswald', 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   max-width: 950px;
 }
@@ -31,7 +33,7 @@ h1 {
   margin-top: -1.3rem;
 }
 
-.image{
+.image {
   border-radius: 10% 10% 10% 10%;
   box-shadow: 2px 2px 21px black;
   position: relative;
