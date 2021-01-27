@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Antonio David Tejada Villalon" />
+    <meta
+      name="description"
+      content="Assignment portal for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
+    />
+    <title>WDD230 W04</title>
+    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link rel="stylesheet" href="/lesson4/css/small.css">
+    <link rel="stylesheet" href="/lesson4/css/medium.css">
+    <link rel="stylesheet" href="/lesson4/css/large.css">
+</head>
+<body>
+    <header>
+            <img src="/lesson4/images/sunny-day.png" alt="">
+        <section>
+            <h1>Meteo-Con</h1>
+            <p>Provides information about the weather</p>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Weather News</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+    </nav>
+    <main></main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+            San Juan - Argentina |
+            <a href="https://www.byui.edu/online" target="_blank"
+              >BYUI Online Learning</a
+            >
+          </p>
+          <br>
+          <p>
+            Last Modification: <span id="currentdate"></span>
+            <span id="time"></span>
+          </p>
+    </footer>
+    <script src="/lesson4/js/scripts.js"></script>
+    <script src="/js/currentDate.js"></script>
+</body>
+</html>
