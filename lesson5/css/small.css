@@ -182,6 +182,7 @@ ul.Bslide li div{
 .slidemenu {
     text-align: center;
     margin: 20px;
+    padding: 0;
 }
 
 .slidemenu li {

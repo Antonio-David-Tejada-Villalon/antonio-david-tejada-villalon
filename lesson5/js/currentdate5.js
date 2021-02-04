@@ -39,13 +39,13 @@ document.getElementById("todays").textContent = fulldate;
 
 document.getElementById("currentyear").textContent = d.getFullYear();
 
-if (daynames[d.getDay()] == dayName) {
+if (daynames[d.getDay()] == "Friday") {
     document.getElementById("banner").textContent = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
     document.getElementById("banner").style.backgroundColor= "#1F213D";
     document.getElementById("banner").style.color= "#E1F1FF";
     document.getElementById("banner").style.width = "100%";
-    document.getElementById("banner").style.display = "Flex";
-    document.getElementById("banner").style.textAlign = "justify";
+    /*document.getElementById("banner").style.display = "flex";*/
+    document.getElementById("banner").style.textAlign = "center";
 
 }
 
