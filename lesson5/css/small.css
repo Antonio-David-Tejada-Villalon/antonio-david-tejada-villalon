@@ -204,12 +204,18 @@ ul.Bslide li div{
 
 /*Weather Site Text Overlay*/
 
+.positioning{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
 .weather{
     position: absolute;
-    top: 30%;
+    bottom: 15rem;
     background-color: rgba(31, 33, 61, 0.5);
     border-radius: .5rem;
-    left: 60%;
+    left: 65%;
     padding: 1rem;
     padding-top: 0;
     box-shadow: 1px 1px 10px #FFB103;
