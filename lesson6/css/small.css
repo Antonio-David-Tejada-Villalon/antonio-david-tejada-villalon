@@ -100,7 +100,8 @@ nav ul.hide {
 
 /*----- Controlling the main -----*/
 
-main h1{
+.city{
+    font-size: 2rem;
     text-align: center;
     color: #1F213D;
     text-shadow: -4px 3px 0 #FFB103;
