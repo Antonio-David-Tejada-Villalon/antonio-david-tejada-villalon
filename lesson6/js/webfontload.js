@@ -1,7 +1,5 @@
 WebFont.load({
     google: {
-      families: [
-         'Roboto', 'Alegreya'
-      ]
+      families: ['Roboto', 'Alegreya']
     }
   });
