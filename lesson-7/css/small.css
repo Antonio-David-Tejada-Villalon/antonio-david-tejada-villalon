@@ -1,0 +1,17 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    justify-items: center;
+    align-items: center;
+    font-family: serif;
+}
+
+img{
+    filter: blur(0rem);
+    transition: filter .5s;
+}
+
+img:hover{
+    box-shadow: 1px 1px 10px #FFB103;
+}
