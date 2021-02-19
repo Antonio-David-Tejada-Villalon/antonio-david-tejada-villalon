@@ -8,7 +8,7 @@ body{
 }
 
 img[data-src]{
-    filter: blur(1rem)
+    filter: blur(.5rem)
 }
 
 img{
