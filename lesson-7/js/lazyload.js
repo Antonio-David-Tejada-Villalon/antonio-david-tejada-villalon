@@ -42,12 +42,13 @@ function preloadImage(img) {
   }
 
   img.src = src;
+  img.removeAttribute("data-src");
 }
 
 //optional parameters being set for the IntersectionalObserver
 const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 50px 0px",
+  threshold: 1,
+  rootMargin: "0px 0px 300px 0px",
 };
 
 //loop through the images and determine which ones need to be shown

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Antonio David Tejada Villalon" />
+    <meta
+      name="description"
+      content="W07 🥑 Activity: Progressive Loading of Images for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>W07 The Gallery Page</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/small-old.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img class="logo" src="img/sunny-day.png" alt="Sunny Day Logo" />
+      <section>
+        <h1>Meteo-Con</h1>
+        <p>Provides information about the weather</p>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Weather News</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2 class="city">City Town</h2>
+        <picture class="changing">
+          <source media="(max-width: 500px)" srcset="img/weather-img/images/wdd230_image_franklinOriginal_medium500.jpg">
+          <source media="(min-width: 800px)" srcset="img/weather-img/images/wdd230_image_franklinOriginal_large900.jpg">
+          <img  src="img/weather-img/images/wdd230_image_franklinOriginal.jpeg" alt="Banner Landscape">
+        </picture>
+      </section>
+      <section class="positioning">
+        <div class="weather">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>Temperature: <span id="tempF">46</span>&deg; F</p>
+          <p>Humidity: 69%</p>
+          <p>Precipitation: 0 inches</p>
+          <p>Wind Speed: <span id="speed">5</span> mph</p>
+          <p>WindChill: <span id="windchill"></span></p>
+        </div>
+      </section>
+      <section class="containergallery">
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/sunny.jpg"
+          alt="Sunny Unsplash's Images 1">
+          <figcaption>
+            Sunny Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/windy.jpg"
+          alt="Windy Unsplash's Images 2">
+          <figcaption>
+            Windy Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/tornado.jpg"
+          alt="Tornado Unsplash's Images 3">
+          <figcaption>
+            Tornadoes Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/stormy.jpg"
+          alt="Stormy Unsplash's Images 4">
+          <figcaption>
+            Stormy Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/snowy.jpg"
+          alt="Snowy Unsplash's Images 5">
+          <figcaption>
+            Snowy Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/hail.jpg"
+          alt="Hailing Unsplash's Images 6">
+          <figcaption>
+            Hailing Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/foggy.jpg"
+          alt="Foggy Unsplash's Images 7">
+          <figcaption>
+            Foggy Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/drizzle.jpg"
+          alt="Drizzle Unsplash's Images 8">
+          <figcaption>
+            Drizzle Day Weather
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/weather-img/placeholder.jpg" 
+          data-src="img/weather-img/cloudy.jpg"
+          alt="Cloudy Unsplash's Images 9">
+          <figcaption>
+            Cloudy Day Weather
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+        San Juan - Argentina |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <br />
+      <p>
+        Date: <span id="todays"></span><br />
+        Last updated: <span id="time"></span>
+      </p>
+    </footer>
+    <script src="js/lazyload.js"></script>
+    <script src="js/currentdate6.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>
