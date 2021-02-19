@@ -15,4 +15,12 @@
         background-color: #1F213D;
     }
 
+    figure img:hover, figcaption:hover{
+        box-shadow: 0 0 12px #e1f1ff;
+    }
+
+    figcaption{
+        border-radius: 5px 150px;
+    }
+
 } /*end large */

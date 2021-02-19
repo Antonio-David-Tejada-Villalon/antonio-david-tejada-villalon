@@ -176,7 +176,3 @@ figure figcaption {
     text-align: center;
     color: #e1f1ff;
 }
-
-figure img:hover {
-    box-shadow: 0px 0px 10px #E1F1FF;
-}
