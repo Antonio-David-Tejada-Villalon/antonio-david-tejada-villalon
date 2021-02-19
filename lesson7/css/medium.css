@@ -1,12 +1,16 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-    nav button {display: none;}
+    nav button {
+        display: none;
+    }
 
     nav ul.hide {
         display: block;
     }
 
-    nav ul {margin-left: 2%;}
+    nav ul {
+        margin-left: 2%;
+    }
 
     nav ul li {
         float: left;
@@ -18,8 +22,19 @@
         padding: .8rem 1rem;
     }
 
-    section div.weather{
+    section div.weather {
         bottom: 15rem;
-        font-size: .7rem;}
+        font-size: .7rem;
+    }
 
-} /*end medium */
+    .containergallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: .1rem;
+        padding: 0;
+        background-color: #1F213D;
+    }
+
+}
+
+/*end medium */

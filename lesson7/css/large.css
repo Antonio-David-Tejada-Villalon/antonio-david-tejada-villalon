@@ -7,4 +7,12 @@
         font-size: 1rem;
     }
 
+    .containergallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: .1rem;
+        padding: 0;
+        background-color: #1F213D;
+    }
+
 } /*end large */
