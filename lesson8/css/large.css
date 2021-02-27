@@ -1,0 +1,26 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav ul li a {padding: .6rem 1rem;}
+
+    section div.weather{
+        font-size: 1rem;
+    }
+
+    .containergallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: .1rem;
+        padding: 0;
+        background-color: #1F213D;
+    }
+
+    figure img:hover, figcaption:hover{
+        box-shadow: 0 0 12px #e1f1ff;
+    }
+
+    figcaption{
+        border-radius: 5px 150px;
+    }
+
+} /*end large */
