@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+table{
+    box-shadow: 1px 1px 18px #628ca6;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px 10px 5px 10px;
+}
+
+.t1 {
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #7fb9c2;
+}
+
+.t2 {
+    color: white;
+    background-color: #628ca6;
+    font-size: 16px;
+}
+
+/*#ft01 tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+#ft01 tr:nth-child(odd) {
+    background-color: #e7ffed;
+}*/
+
+.t3, .t5, .t7{
+    background-color: #e7f0ed;
+}
+
+.t4, .t6, .t8{
+    background-color: #e7ffed;
+}
+
+tr.t6 td:nth-child(3){
+    color: white;
+    background-color: #628ca6;
+}
+
+.t71{
+    font-style: italic;
+}
+
+.tablefoot{
+    background-color: #7fb9c2;
+}
+
+tfoot td{
+    font-size: .5rem;
+}
