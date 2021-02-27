@@ -275,7 +275,9 @@ form label.lradio{
 
 form input.sbutton{
     font-size: 1rem;
-    color: #1F213D;
+    color: #E1F1FF;
     margin: .5rem;
     border-radius: .5rem;
+    padding: .5rem;
+    background-color: #1F213D;
 }
