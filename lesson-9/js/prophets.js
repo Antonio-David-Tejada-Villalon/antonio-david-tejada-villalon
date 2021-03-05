@@ -23,7 +23,7 @@ fetch(requestURL)
       p1.textContent = "Date of Birth:" + " " +prophets[i].birthdate;
       p2.textContent = "Place of Birth:" + " " +prophets[i].birthplace;
       p3.textContent = "Death:" + " " +prophets[i].death;
-      p4.textContent = "Length:" + " " +prophets[i].length; 
+      p4.textContent = "Length:" + " " +prophets[i].length+ " years"; 
       p5.textContent = "Order:" + " " +prophets[i].order;
       p6.textContent = "N° of Children:" + " " +prophets[i].numofchildren;
       image.setAttribute("src", prophets[i].imageurl);
