@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Antonio David Tejada Villalon" />
+    <meta
+      name="description"
+      content="W09 ✅ Assignment: The Weather Site Home Page for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>W09 - The Weather Site Home Page</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img class="logo" src="images/sunny-day.png" alt="Sunny Day Logo" />
+      <section>
+        <h1>Meteo-Con</h1>
+        <p>Provides information about the weather</p>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Weather News</a></li>
+        <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2 class="city">City Town</h2>
+        <picture class="changing">
+          <source media="(max-width: 500px)" srcset="images/wdd230_image_franklinOriginal_medium500.jpg">
+          <source media="(min-width: 800px)" srcset="images/wdd230_image_franklinOriginal_large900.jpg">
+          <img  src="images/wdd230_image_franklinOriginal.jpeg" alt="Banner Landscape">
+        </picture>
+      </section>
+      <section class="positioning">
+        <div class="weather">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>Temperature: <span id="tempF">46</span>&deg; F</p>
+          <p>Humidity: 69%</p>
+          <p>Precipitation: 0 inches</p>
+          <p>Wind Speed: <span id="speed">5</span> mph</p>
+          <p>WindChill: <span id="windchill"></span></p>
+        </div>
+      </section>
+      <div class="data"></div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+        San Juan - Argentina |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <br />
+      <p>
+        Date: <span id="todays"></span><br />
+        Last updated: <span id="time"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate6.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/info.js"></script>
+  </body>
+</html>

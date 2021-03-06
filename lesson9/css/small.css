@@ -1,0 +1,147 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+
+body {
+    background-color: #e1f1ff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header,
+nav,
+footer,
+p, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Alegreya', serif;
+}
+
+header {
+    color: #E1F1FF;
+    background-color: #1F213D;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header section h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img.logo {
+    width: 10%;
+}
+
+section picture.changing {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #1F213D;
+}
+
+nav {
+    background-color: #15A4FC;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #1F213D;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #F52B66;
+    color: #E1F1FF;
+}
+
+nav ul li a:hover {
+    background-color: #F52B66;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----- Controlling the main -----*/
+
+.city{
+    font-size: 2rem;
+    text-align: center;
+    color: #1F213D;
+    text-shadow: -4px 3px 0 #FFB103;
+}
+
+/*----- Controlling the footer -----*/
+
+footer {
+    color: #E1F1FF;
+    background-color: #1F213D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer p a {
+    color: #FFB103;
+}
+
+/*Weather Site Text Overlay*/
+
+.positioning{
+    position: relative;
+    padding: 0;
+    margin: 1%;
+}
+
+.weather{
+    position: absolute;
+    bottom: 5.5rem;
+    background-color: rgba(31, 33, 61, 0.5);
+    border-radius: .5rem;
+    left: 65%;
+    padding: 1rem;
+    padding-top: 0;
+    box-shadow: 1px 1px 10px #FFB103;
+    font-size: .5rem;
+    color: #E1F1FF;
+}
