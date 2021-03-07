@@ -7,4 +7,28 @@
         font-size: 1rem;
     }
 
+    .dat{
+        max-width: 1125px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        text-align: center;
+        margin: 1rem auto;
+        background-color: #E1F1FF;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #F52B66;
+        padding: 10rem;
+    }
+
+    .info:nth-child(odd) img{
+        grid-row: 2;
+    }
+
+    .dat .imgt{
+        align-content: center;
+    }
 } /*end large */

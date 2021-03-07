@@ -22,4 +22,30 @@
         bottom: 15rem;
         font-size: .7rem;}
 
+    .dat{
+        max-width: 800px;
+        margin: auto;
+        border: 1px solid #e1f1ff;
+        background-color: #1F213D;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .imgt{
+        width: 100%; 
+        border:1px solid #000080; 
+        height: auto;
+    }
+
+    .para{
+        margin: 1rem;
+    }
+
 } /*end medium */

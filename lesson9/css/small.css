@@ -145,3 +145,56 @@ footer p a {
     font-size: .5rem;
     color: #E1F1FF;
 }
+
+/*weather home page*/
+
+.dat{
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid #e1f1ff;
+    background-color: #1F213D;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info:nth-child(odd) img{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.info:nth-child(odd) .para{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dat .info{
+    padding: .3rem;
+    border: .2rem solid #e1f1ff;
+    background-color: #1F213D;
+    border-radius: 1rem;
+}
+
+.htitle{
+    color: #e1f1ff;
+    text-align: center;
+}
+
+.imgt{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 18px #E1F1FF;
+}
+
+.para{
+    font-size: 1rem;
+    background-color: #1F213D;
+    color: #e1f1ff;
+    text-align: center;
+    margin: 1rem auto;
+    padding: .1rem;
+}
