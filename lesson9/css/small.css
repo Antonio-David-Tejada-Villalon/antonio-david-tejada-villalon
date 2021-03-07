@@ -2,7 +2,7 @@
 
 body {
     background-color: #e1f1ff;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -44,12 +44,10 @@ img.logo {
     width: 10%;
 }
 
-section picture.changing {
+/*section picture.changing img {
     position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+    text-align: center;
+}*/
 
 nav button {
     margin: .2rem 2%;
@@ -127,7 +125,7 @@ footer p a {
 
 /*Weather Site Text Overlay*/
 
-.positioning{
+/*.positioning{
     position: relative;
     padding: 0;
     margin: 1%;
@@ -144,7 +142,7 @@ footer p a {
     box-shadow: 1px 1px 10px #FFB103;
     font-size: .5rem;
     color: #E1F1FF;
-}
+}*/
 
 /*weather home page*/
 
@@ -197,4 +195,35 @@ footer p a {
     text-align: center;
     margin: 1rem auto;
     padding: .1rem;
+}
+
+.ci{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid #1F213D;
+    border-radius: 1rem 1rem 0 0;
+}
+
+iframe{
+    border: 10px solid #1F213D;
+    box-shadow: 10px 10px 18px #1F213D;
+    border-radius: 1rem;
+}
+
+.ci1 h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+div.ci1 ul li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.ci1 img{
+    padding: 1rem;
+    margin: 0 0 0 1.5rem;
+    width: 10%;
 }
