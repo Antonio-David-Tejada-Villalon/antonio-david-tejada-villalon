@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Antonio David Tejada Villalon" />
+    <meta
+      name="description"
+      content="W10 ✅ Assignment: Preston Weather API for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>W10 - Preston Weather API</title>
+    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="banner"></div>
+    <header>
+            <img src="/lesson10/images/sunny-day.png" alt="Sunny Day Logo">
+        <section>
+            <h1>Meteo-Con</h1>
+            <p>Provides information about the weather</p>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Weather News</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Contact</a></li>    
+            </ul>
+    </nav>
+    <main>
+        <section class="carrousel">
+            <ul class="Bslide">
+                <li id="slide1">
+                    <img src="/lesson10/images/pexels-photo-1694642.jpeg" alt="Crystal Lake">
+                    <div></div>
+                    <h3>Preston, Idaho</h3>
+                    <p>Beautiful lake for relaxing</p>
+                </li>
+                <li id="slide2">
+                    <img src="/lesson10/images/pexels-photo-5033771.jpeg" alt="Monument">
+                    <div></div>
+                        <h3>Wonderful City</h3>
+                        <p>It is a cool place to see a lot of monuments</p>
+                </li>
+                <li id="slide3">
+                    <div></div>
+                    <img src="/lesson10/images/pexels-photo-5771520.jpeg" alt="Waterfall">
+                    <h3>Superb Waterfall</h3>
+                    <p>The most beautiful nature</p>
+                </li>
+            </ul>
+            <ul class="slidemenu">
+                <li>
+                  <a href="#slide1">1</a>
+                </li>
+                <li>
+                  <a href="#slide2">2</a>
+                </li>
+                 <li>
+                  <a href="#slide3">3</a>
+                </li>
+              </ul>
+        </section>
+        <section class="positioning">
+            <div class="weather">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="wcurrent"></span> &deg;F</p>
+            <p>High: <span id="high"></span>&deg;F</p>
+            <p>Wind Chill: <span id="wchill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wspeed"></span> mph</p>
+            </div>
+        </section>
+        <h3 class="fc0">Forecast 5 Days</h3>
+        <div class="fc"></div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+            San Juan - Argentina |
+            <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+          </p>
+          <br>
+          <p>
+            Date: <span id="todays"></span><br>
+            Last updated: <span id="time"></span>
+          </p>
+    </footer>
+    <script src="js/currentdate5.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherfull.js"></script>
+    <script src="js/forecast.js"></script>
+</body>
+</html>
