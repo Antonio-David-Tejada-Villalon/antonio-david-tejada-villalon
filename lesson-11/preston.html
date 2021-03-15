@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Antonio David Tejada Villalon" />
+    <meta
+      name="description"
+      content="W11 🥑 Activity: Peer Review - Usability for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Preston Weather</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="banner"></div>
+    <header>
+      <img class="logo" src="images/sunny-day.png" alt="Sunny Day Logo" />
+      <section>
+        <h1>Meteo-Con</h1>
+        <p>Provides information about the weather</p>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="imgPlace">
+            <img
+              src="/lesson10/images/pexels-photo-1694642.jpeg"
+              alt="Crystal Lake"
+            />
+            <div class="into">
+            <h3>Preston, Idaho</h3>
+            <p>Beautiful lake for relaxing</p>
+            </div>
+      </div>
+      <section class="positioning">
+        <div class="weather">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="wcurrent"></span> &deg;F</p>
+          <p>High: <span id="high"></span>&deg;F</p>
+          <p>Wind Chill: <span id="wchill"></span></p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="wspeed"></span> mph</p>
+        </div>
+      </section>
+      <h3 class="fc0">Forecast 5 Days</h3>
+      <div class="fc"></div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+        San Juan - Argentina |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <br />
+      <p>
+        Date: <span id="todays"></span><br />
+        Last updated: <span id="time"></span>
+      </p>
+    </footer>
+    <script src="js/currentdat11.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherpreston.js"></script>
+    <script src="js/forecastpreston.js"></script>
+  </body>
+</html>

@@ -54,6 +54,7 @@ nav button {
 
 nav {
     background-color: #15A4FC;
+
 }
 
 nav ul {
@@ -108,8 +109,8 @@ footer p a {
 }
 
 /*----- Carrousel -----*/
-.carrousel {
-    margin: 0 auto;
+section.carrousel {
+    margin: 5rem;
     background-color: #FFB103;
     padding: 30px;
 }
@@ -120,11 +121,12 @@ ul.Bslide {
     height: 300px;
     padding: 0;
     margin: 0;
+    margin-left: 100px;
 }
 
 ul.Bslide li {
     position: absolute;
-    left: 0px;
+    left: 10px;
     top: 0px;
     opacity: 0;
     width: inherit;
@@ -132,6 +134,7 @@ ul.Bslide li {
     transition: opacity .5s;
     background: #E1F1FF;
     list-style-type: none;
+    margin-right: 20rem;
 }
 
 ul.Bslide li img {

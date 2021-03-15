@@ -1,0 +1,34 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav ul li a {padding: .6rem 1rem;}
+
+    section div.weather{
+        font-size: 1rem;
+    }
+
+    .dat{
+        max-width: 1125px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        text-align: center;
+        margin: 1rem auto;
+        background-color: #E1F1FF;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #F52B66;
+        padding: 10rem;
+    }
+
+    .info:nth-child(odd) img{
+        grid-row: 2;
+    }
+
+    .dat .imgt{
+        align-content: center;
+    }
+} /*end large */
