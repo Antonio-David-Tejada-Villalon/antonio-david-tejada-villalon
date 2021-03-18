@@ -6,10 +6,10 @@
     <meta name="author" content="Antonio David Tejada Villalon" />
     <meta
       name="description"
-      content="W11 🥑 Activity: Peer Review - Usability for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
+      content="W09 ✅ Assignment: The Weather Site Home Page for Antonio David Tejada Villalon in WDD 230: Web Frontend Development I at Brigham Young University - Idaho"
     />
     <link rel="shortcut icon" href="favicon.ico" />
-    <title>Soda Springs Weather</title>
+    <title>W09 - The Weather Site Home Page</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -27,37 +27,35 @@
     <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="primaryNav" class="hide">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="preston.html">Preston</a></li>
-        <li class="active"><a href="#">Soda Springs</a></li>
-        <li><a href="fishhaven.html">Fish Haven</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Weather News</a></li>
+        <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <div class="imgPlace">
-        <img
-          src="images/pexels-photo-5033771.jpeg"
-          alt="Crystal Lake"
-        />
-        <div class="into">
-          <h3>Wonderful City</h3>
-          <p>It is a cool place to see a lot of monuments</p>
-        </div>
-  </div>
-  <section class="positioning">
+      <section>
+        <h2 class="city">City Town</h2>
+        <picture class="changing">
+          <source media="(max-width: 500px)" srcset="images/wdd230_image_franklinOriginal_medium500.jpg">
+          <source media="(min-width: 800px)" srcset="images/wdd230_image_franklinOriginal_large900.jpg">
+          <img  src="images/wdd230_image_franklinOriginal.jpeg" alt="Banner Landscape">
+        </picture>
+      </section>
+      <section class="positioning">
         <div class="weather">
           <h3>Weather Summary</h3>
-          <p>Currently: <span id="wcurrent"></span> &deg;F</p>
-          <p>High: <span id="high"></span>&deg;F</p>
-          <p>Wind Chill: <span id="wchill"></span></p>
-          <p>Humidity: <span id="humidity"></span>%</p>
-          <p>Wind Speed: <span id="wspeed"></span> mph</p>
+          <p>Currently: Sunny</p>
+          <p>Temperature: <span id="tempF">46</span>&deg; F</p>
+          <p>Humidity: 69%</p>
+          <p>Precipitation: 0 inches</p>
+          <p>Wind Speed: <span id="speed">5</span> mph</p>
+          <p>WindChill: <span id="windchill"></span></p>
         </div>
       </section>
-      <h3 class="fc0">Forecast 5 Days</h3>
-      <div class="fc"></div>
+      <div class="data"></div>
     </main>
     <footer>
       <p>
@@ -73,9 +71,10 @@
         Last updated: <span id="time"></span>
       </p>
     </footer>
-    <script src="js/currentdate11.js"></script>
+    <script src="js/currentdate6.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/weathersodasprings.js"></script>
-    <script src="js/forecastsodasprings.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/info.js"></script>
   </body>
 </html>

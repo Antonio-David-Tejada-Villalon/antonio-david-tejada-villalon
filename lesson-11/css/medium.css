@@ -6,7 +6,7 @@
         display: block;
     }
 
-    nav ul {margin-left: 2%;}
+    nav ul {margin-left: 0;}
 
     nav ul li {
         float: left;
@@ -46,6 +46,19 @@
 
     .para{
         margin: 1rem;
+    }
+
+    .ci{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 5px solid #1F213D;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .ci1{
+        text-align: center;
     }
 
 } /*end medium */

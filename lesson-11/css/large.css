@@ -3,6 +3,11 @@
 
     nav ul li a {padding: .6rem 1rem;}
 
+    #primaryNav{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
     section div.weather{
         font-size: 1rem;
     }
