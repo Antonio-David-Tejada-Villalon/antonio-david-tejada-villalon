@@ -19,7 +19,7 @@
     }
 
     section div.weather{
-        bottom: 15rem;
+        left: 50%;
         font-size: .7rem;}
 
     .dat{
@@ -59,6 +59,27 @@
 
     .ci1{
         text-align: center;
+    }
+
+    .fc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+        background-color: #1F213D;
+        margin: 1rem;
+        border-radius: .5rem;
+    }
+
+    div.containergallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: .5rem;
+        justify-items: center;
+        align-items: center;
+        font-family: serif;
     }
 
 } /*end medium */
