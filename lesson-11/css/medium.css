@@ -82,6 +82,7 @@
         font-family: serif;
     }
 
+<<<<<<< HEAD
     .infohome{
         margin: 1rem;
         padding: 0 0 2.5rem 0;
@@ -99,4 +100,6 @@
         box-shadow: 1px 1px 10px #E1F1FF;
     }
 
+=======
+>>>>>>> d5a8428780df9dcd2244ba9a87741793e81b360b
 } /*end medium */
