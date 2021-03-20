@@ -517,7 +517,8 @@ section.tab h3{
 
 .infohome p a{
     color: #e1f1ff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #FFB103;
 }
 
 .infohome p a:hover{
