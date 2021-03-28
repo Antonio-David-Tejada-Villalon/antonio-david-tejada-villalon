@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Antonio David Tejada Villalon" />
+    <meta
+      name="description"
+      content="Portal Builded by Antonio David Tejada Villalon"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>San Juan - Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="San Juan COC Logo" />
+      <div>
+        <h1>San Juan - Chamber Of Commerce</h1>
+        <p>Front Line Commerce</p>
+      </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#128310;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">City</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container-slider">
+        <ul class="slider">
+          <li id="slide1">
+            <img src="img/Tradition-Jachal.jpg" alt="Tradition in Jachal">
+            <div></div>
+            <h3>Tradition in Jachal</h3>
+          </li>
+          <li id="slide2">
+            <img src="img/Pocito-Vineyards.jpg" alt="Vineyards in Pocito">
+            <div></div>
+            <h3>Vineyards in Pocito</h3>
+          </li>
+          <li id="slide3">
+            <img src="img/Oil-Olive.jpg" alt="Oil Olive">
+            <div></div>
+            <h3>Bottles of Olive Oil</h3>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <a href="#slide1"></a>
+          </li>
+          <li>
+            <a href="#slide2"></a>
+          </li>
+          <li>
+            <a href="#slide3"></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Form to get a membership</h2>
+        <a href="#">Join</a>
+      </div>
+      <div>
+        <h2>Purpose and Goals</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          distinctio saepe unde officia numquam aut veritatis ratione tempora
+          repellat facilis culpa sed praesentium, fuga magnam accusantium
+          blanditiis deleniti autem sint.
+        </p>
+      </div>
+      <div>
+        <h2>Current Weather Information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius
+          deserunt quisquam magnam reprehenderit, pariatur sequi vel quibusdam
+          dignissimos perspiciatis saepe magni minima cumque necessitatibus
+          quaerat labore. Aspernatur, magnam ipsum.
+        </p>
+      </div>
+      <div>
+          <h2>Forecast 3 days</h2>
+          <div class="forecas-days"></div>
+          <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+      </div>
+      <div class="contact-information">
+        <h3>Contact information</h3>
+        <ul>
+          <li>
+            Address: Proyectada S/N - Rawson - San Juan -
+            Argentina
+          </li>
+          <li>Phone: +54 9 264 xxxxxxx</li>
+          <li>Email: noreply@email.com</li>
+        </ul>
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/"
+            ><img src="img/facebook.png" alt="Facebook Icon"
+          /></a>
+          <a href="https://twitter.com/?lang=en"
+            ><img src="img/twitter.png" alt="Twitter Icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="img/instagram.png" alt="Instagram Icon"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="img/youtube.png" alt="Youtube Icon"
+          /></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>
+          &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+          San Juan - Argentina |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+        </p>
+        <br />
+        <p>
+          Date: <span id="todays"></span><br />
+          Last updated: <span id="time"></span>
+        </p>
+      </footer>
+      <script src="js/webfontload.js"></script>
+      <script src="js/menu.js"></script>
+  </body>
+</html>

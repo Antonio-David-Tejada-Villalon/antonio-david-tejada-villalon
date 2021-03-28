@@ -1,0 +1,15 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    header img{
+        width: 10%;
+    }
+
+   nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li a {padding: .6rem 1rem;}
+} /*end large */
