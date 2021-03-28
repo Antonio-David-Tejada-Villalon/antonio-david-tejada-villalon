@@ -517,7 +517,12 @@ section.tab h3{
 
 .infohome p a{
     color: #e1f1ff;
+<<<<<<< HEAD
     text-decoration: none;
+=======
+    text-decoration: underline;
+    text-decoration-color: #FFB103;
+>>>>>>> bc3461bc760879c43384e56461cc54acea4e986c
 }
 
 .infohome p a:hover{
