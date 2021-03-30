@@ -34,4 +34,31 @@
         padding: .8rem 1rem;
     }
 
+    .sectionbusiness{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0 3.5rem 0 3.5rem;
+    }
+
+    .formjoin{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .formjoin h2{
+        text-align: center;
+    }
+
+    .formjoin a{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .purposeandgoal{
+        margin: 0 3rem 0 3rem;
+    }
+
 } /*end medium */
