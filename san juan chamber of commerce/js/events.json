@@ -1,0 +1,42 @@
+{
+    "towns": [
+        {
+            "name": "Jachal",
+            "events": [
+                "November: Tradition Festival",
+                "July 29: Molino Viejo Festival in Huaco"
+            ]
+        },
+        {
+            "name": "Iglesia",
+            "events": [
+                "January 17 and 18: Semilla and Manzana Popular Festival",
+                "February: Valles and Cumbres Iglesianas Festival"
+            ]
+        },
+        {
+            "name": "9 de Julio",
+            "events": [
+                "July 9: July 9 Festival"
+            ]
+        },
+        {
+            "name": "Rawson",
+            "events": [
+                "July: Carneo Español Festival"
+            ]
+        },
+        {
+            "name": "San Juan Government",
+            "events":[
+                "February: Sol's National Festival"
+            ]
+        },
+        {
+            "name": "Valle Fértil",
+            "events":[
+                "July: Chivo Provincial Festival"
+            ]
+        }
+    ]
+}

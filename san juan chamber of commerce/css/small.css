@@ -10,7 +10,7 @@ h1, h2, h3 {
     font-family: 'Spartan', sans-serif;
 }
 
-p, nav, a{
+p, nav, a, li{
     font-family: 'Amiri', serif;
 }
 
@@ -183,4 +183,99 @@ ul.slider li h3{
     height: .1rem;
     font-size: .1rem;
     border-radius: 100%;
+}
+
+/*Organizing the form div*/
+.formjoin{
+    margin: 1rem 0 1rem 0;
+    box-shadow: 1px 1px 5px #4b465c;
+    border-radius: .5rem;
+    background-image: url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1549&q=80);
+}
+
+.formjoin h2{
+    padding: .5rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.formjoin a{
+    padding: .5rem;
+    text-decoration: none;
+    color: #678da4;
+    font-size: 1.5rem;
+}
+
+/*Organizing local businesses*/
+
+.sectionbusiness{
+    display: flex;
+    flex-direction: column;
+}
+
+div.business1{
+    text-align: center;
+    padding: 1rem;
+    margin: .1rem;
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+div.business1 img{
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #4b465c;
+}
+
+div.business1 p a{
+    text-decoration: none;
+    color: #678da4;
+    font-size: 1.1rem;
+    text-shadow: 0px 0px 5px #000;
+}
+
+/*Organizing Purpose and Goals*/
+
+.purposeandgoal{
+    padding: .5rem;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.purposeandgoal ul li{
+    list-style: square;
+}
+
+/*Organizing Upcoming events*/
+
+.upcomingevents{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    max-width: 100%;
+    gap: 1rem;
+    margin: 5px;
+}
+
+section.festivals h2{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.eventual{
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.par1, .linea, .slinea, .tlinea{
+    margin: 0;
+    padding: .2rem;
+    text-align: center;
+}
+
+.par1 {
+    padding-top: 0.5rem;
+    text-align: center;
 }

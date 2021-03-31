@@ -11,9 +11,9 @@
     />
     <link rel="shortcut icon" href="favicon.ico" />
     <title>San Juan - Chamber of Commerce</title>
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
     <header>
@@ -24,7 +24,7 @@
       </div>
     </header>
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#128310;</button>
+      <button onclick="toggleMenu()">&#128310;</button>
       <ul id="primaryNav" class="hide">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">City</a></li>
@@ -37,17 +37,17 @@
       <div class="container-slider">
         <ul class="slider">
           <li id="slide1">
-            <img src="img/Tradition-Jachal.jpg" alt="Tradition in Jachal">
+            <img src="img/Tradition-Jachal.jpg" alt="Tradition in Jachal" />
             <div></div>
             <h3>Tradition in Jachal</h3>
           </li>
           <li id="slide2">
-            <img src="img/Pocito-Vineyards.jpg" alt="Vineyards in Pocito">
+            <img src="img/Pocito-Vineyards.jpg" alt="Vineyards in Pocito" />
             <div></div>
             <h3>Vineyards in Pocito</h3>
           </li>
           <li id="slide3">
-            <img src="img/Oil-Olive.jpg" alt="Oil Olive">
+            <img src="img/Oil-Olive.jpg" alt="Oil Olive" />
             <div></div>
             <h3>Bottles of Olive Oil</h3>
           </li>
@@ -64,18 +64,81 @@
           </li>
         </ul>
       </div>
-      <div>
+      <section class="sectionbusiness">
+        <div class="business1">
+          <img
+            src="img/moa-productora-de-eventos1.png"
+            alt="event production company"
+          />
+          <h3>MOA Events</h3>
+          <p>
+            We are an event services company with more than 35 years of
+            experience in the search for the satisfaction of each of our
+            clients. <a href="https://www.facebook.com/moaeventos0/">&#10138;</a>
+          </p>
+        </div>
+        <div class="business1">
+          <img
+            src="img/Graffigna_wines_logo1.png"
+            alt="graffigna wineries and vineyards"
+          />
+          <h3>Graffigna Wineries and Vineyards</h3>
+          <p>
+            Graffigna's nature is reflected in the passion that is imprinted
+            that is imprinted on each of our wines. Unique is the spirit,
+            authenticity and energy of Argentina and our people. <a href="https://graffignawines.com/">&#10138;</a>
+          </p>
+        </div>
+        <div class="business1">
+          <img src="img/campo-de-olivos-logo1.png" alt="olive grove" />
+          <h3>Olive Grove</h3>
+          <p>
+            It is a family business, the result of our own capital and a great
+            effort, with a long commercial trajectory. <a href="http://www.campodeolivos.com.ar/">&#10138;</a>
+          </p>
+        </div>
+      </section>
+      <section class="festivals">
+        <h2>Upcoming Events</h2>
+        <div class="upcomingevents"></div>
+      </section>
+      <div class="formjoin">
         <h2>Form to get a membership</h2>
         <a href="#">Join</a>
       </div>
-      <div>
+      <div class="purposeandgoal">
         <h2>Purpose and Goals</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          distinctio saepe unde officia numquam aut veritatis ratione tempora
-          repellat facilis culpa sed praesentium, fuga magnam accusantium
-          blanditiis deleniti autem sint.
+          Our entity is a non-profit civil organization, constituted on March
+          22, 2021, integrated by representatives of producing and exporting,
+          agricultural, agribusiness, industrial, and tourism service companies.
+          As active and persistent founding members, they are guided by the
+          spirit of ensuring a better future for San Juan and support their
+          budgets for all activities with their social dues.
         </p>
+        <p>SJCC is a non-profit organization whose purpose is:</p>
+        <ul>
+          <li>
+            To promote domestic trade and foreign trade to achieve its
+            expansion;
+          </li>
+          <li>To diversify domestic and foreign markets;</li>
+          <li>
+            To provide its members with opportunities to increase trade and/or
+            cultural relations with other inland provinces and other countries.
+          </li>
+          <li>
+            We defend the interests of producers and industrial exporters;
+          </li>
+          <li>
+            We ensure that we provide high-quality services at home and abroad
+            in the province;
+          </li>
+          <li>
+            Finally, we signed an international agreement to ensure fair
+            conditions and prices for exports from our province.
+          </li>
+        </ul>
       </div>
       <div>
         <h2>Current Weather Information</h2>
@@ -87,17 +150,14 @@
         </p>
       </div>
       <div>
-          <h2>Forecast 3 days</h2>
-          <div class="forecas-days"></div>
-          <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+        <h2>Forecast 3 days</h2>
+        <div class="forecas-days"></div>
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
       </div>
       <div class="contact-information">
         <h3>Contact information</h3>
         <ul>
-          <li>
-            Address: Proyectada S/N - Rawson - San Juan -
-            Argentina
-          </li>
+          <li>Address: Proyectada S/N - Rawson - San Juan - Argentina</li>
           <li>Phone: +54 9 264 xxxxxxx</li>
           <li>Email: noreply@email.com</li>
         </ul>
@@ -118,20 +178,21 @@
       </div>
     </main>
     <footer>
-        <p>
-          &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
-          San Juan - Argentina |
-          <a href="https://www.byui.edu/online" target="_blank"
-            >BYUI Online Learning</a
-          >
-        </p>
-        <br />
-        <p>
-          Date: <span id="todays"></span><br />
-          Last updated: <span id="time"></span>
-        </p>
-      </footer>
-      <script src="js/webfontload.js"></script>
-      <script src="js/menu.js"></script>
+      <p>
+        &copy; <span id="currentyear"></span> | Antonio David Tejada Villalon |
+        San Juan - Argentina |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <br />
+      <p>
+        Date: <span id="todays"></span><br />
+        Last updated: <span id="time"></span>
+      </p>
+    </footer>
+    <script src="js/webfontload.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/infoevents.js"></script>
   </body>
 </html>
