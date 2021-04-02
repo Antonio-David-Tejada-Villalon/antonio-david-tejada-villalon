@@ -4,8 +4,8 @@ const apiOW =
 fetch(apiOW)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-    console.log(jsObject.alert); //there are not alerts in this zone or Json
+    //console.log(jsObject);
+    //console.log(jsObject.alert); //there are not alerts in this zone or Json
     const d = new Date();
     document.getElementById("wcurrent").textContent =
       jsObject.daily[d.getDate()].weather[0].main +
@@ -112,6 +112,17 @@ fetch(apiOW)
         document.querySelector("div.forecas-days").appendChild(forecast);
         document.querySelector("div.forecas-days").appendChild(forecast1);
         document.querySelector("div.forecas-days").appendChild(forecast2);        
+      }
+
+      //console.log(jsObject.alerts);
+
+      if(c==1){
+        if(jsObject.alerts == undefined){
+          window.alert("There isn't an alert in: " + jsObject.timezone);
+        } else {
+          let msg= jsObject.alerts[i].events;
+          window.alert(msg);
+        }
       }
     }
   });
