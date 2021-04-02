@@ -296,3 +296,10 @@ section.festivals h2{
 .weather p{
     text-align: center;
 }
+
+/*Stylizing Forecasting Days*/
+
+.forecas-days{
+    display: flex;
+    justify-content: center;
+}

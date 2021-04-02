@@ -4,14 +4,9 @@ const apiOW =
 fetch(apiOW)
   .then((response) => response.json())
   .then((jsObject) => {
-      console.log(jsObject);
-    console.log(jsObject.timezone);
-    console.log(jsObject.daily);
+    console.log(jsObject);
     console.log(jsObject.alert); //there are not alerts in this zone or Json
     const d = new Date();
-    //console.log(d.getDate());
-    //console.log(d.getDay());
-    //console.log(jsObject.daily[d.getDay()].weather[0].main + "/" + jsObject.daily[d.getDay()].temp.day);
     document.getElementById("wcurrent").textContent =
       jsObject.daily[d.getDate()].weather[0].main +
       " " +
@@ -23,20 +18,12 @@ fetch(apiOW)
 
     const daysa = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let c = 0;
-    //console.log(d.getDate());
 
     //Forecasting just three days in a row in a week
 
     for (let i = 0; i < jsObject.daily.length; i++) {
-      //console.log(i);
-      //console.log(c+=1);
       c += 1;
       if (c == 1) {
-        //console.log(d.getDate());
-        //console.log(d.getDay());
-        //console.log(daysa[d.getDate() + d.getDay() - 1]);
-        //console.log(daysa[d.getDate() + d.getDay()]);
-        //console.log(daysa[d.getDate() + d.getDay() + 1]);
         let forecast = document.createElement("div");
         let daynamet = document.createElement("h4");
         let daynamen = document.createElement("h4");
@@ -48,33 +35,63 @@ fetch(apiOW)
         let temptn = document.createElement("h5");
         let temptnt = document.createElement("h5");
 
-        daynamet.textContent = daysa[d.getDate() + d.getDay() - 1];
+        //Tadoy
+
+        daynamet.textContent = daysa[d.getDay()];
         image.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
-            jsObject.daily[d.getDate() + d.getDay() - 1].weather[0].icon +
+            jsObject.daily[d.getDay()].weather[0].icon +
             ".png"
         );
-        tempt.textContent =
-          jsObject.daily[d.getDate() + d.getDay() - 1].temp.day + " °C";
-        daynamen.textContent = daysa[d.getDate() + d.getDay()];
+        tempt.textContent = jsObject.daily[d.getDay()].temp.day + " °C";
+
+        //Today + 1
+        let dia = d.getDay();
+
+        if(dia <= 5){
+          daynamen.textContent = daysa[d.getDay() + 1];
         imagen.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
-            jsObject.daily[d.getDate() + d.getDay()].weather[0].icon +
+            jsObject.daily[d.getDay() + 1].weather[0].icon +
             ".png"
         );
-        temptn.textContent =
-          jsObject.daily[d.getDate() + d.getDay()].temp.day + " °C";
-        daynament.textContent = daysa[d.getDate() + d.getDay() + 1];
-        imagent.setAttribute(
+        temptn.textContent = jsObject.daily[d.getDay() + 1].temp.day + " °C";
+        } else {
+          dia = 0;
+          daynamen.textContent = daysa[dia + 1];
+        imagen.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
-            jsObject.daily[d.getDate() + d.getDay() + 1].weather[0].icon +
+            jsObject.daily[dia + 1].weather[0].icon +
             ".png"
         );
-        temptnt.textContent =
-          jsObject.daily[d.getDate() + d.getDay() + 1].temp.day + " °C";
+        temptn.textContent = jsObject.daily[dia + 1].temp.day + " °C";
+        }
+
+        //(Today+1)+1
+
+        if(dia < 5) {
+          daynament.textContent = daysa[(d.getDay() + 1) + 1];
+          imagent.setAttribute(
+          "src",
+          "https://openweathermap.org/img/w/" +
+            jsObject.daily[(d.getDay() + 1) + 1].weather[0].icon +
+            ".png"
+          );
+          temptnt.textContent = jsObject.daily[(d.getDay() + 1) + 1].temp.day + " °C";
+        } else {
+          dia = 0;
+          daynament.textContent = daysa[dia];
+          imagent.setAttribute(
+          "src",
+          "https://openweathermap.org/img/w/" +
+            jsObject.daily[dia].weather[0].icon +
+            ".png"
+          );
+          temptnt.textContent = jsObject.daily[dia].temp.day + " °C";
+        }
 
         forecast.appendChild(daynamet);
         forecast.appendChild(image);
