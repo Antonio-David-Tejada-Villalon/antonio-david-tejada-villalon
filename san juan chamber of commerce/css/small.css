@@ -336,3 +336,20 @@ div.forecas-days img{
     border-radius: .5rem;
 
 }
+
+.forecasting a{
+    display: flex;
+    justify-content: center;
+    color: #4b465c;
+    margin: 1rem 0 1rem 0;
+    text-decoration: none;
+}
+
+.forecasting a:hover{
+    margin: 1rem 9rem 1rem 9rem;
+    background-color: #e9f8ff;
+    color: #000000;
+    text-shadow: #678da4;
+    border-radius: .5rem;
+    transition: 1s;
+}
