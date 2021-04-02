@@ -69,4 +69,16 @@
         margin: .5rem 3rem 0 3rem;
     }
 
+    .forecas-days{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .forecasting{
+        margin: .5rem 3rem 0 3rem;
+    }
+
+
 } /*end medium */

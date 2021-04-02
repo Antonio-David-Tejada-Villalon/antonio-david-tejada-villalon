@@ -25,6 +25,8 @@ fetch(apiOW)
       c += 1;
       if (c == 1) {
         let forecast = document.createElement("div");
+        let forecast1 = document.createElement("div");
+        let forecast2 = document.createElement("div");
         let daynamet = document.createElement("h4");
         let daynamen = document.createElement("h4");
         let daynament = document.createElement("h4");
@@ -35,7 +37,11 @@ fetch(apiOW)
         let temptn = document.createElement("h5");
         let temptnt = document.createElement("h5");
 
-        //Tadoy
+        forecast.setAttribute('class', 'threedays');
+        forecast1.setAttribute('class', 'threedays1');
+        forecast2.setAttribute('class', 'threedays2');
+
+        //Today
 
         daynamet.textContent = daysa[d.getDay()];
         image.setAttribute(
@@ -96,14 +102,16 @@ fetch(apiOW)
         forecast.appendChild(daynamet);
         forecast.appendChild(image);
         forecast.appendChild(tempt);
-        forecast.appendChild(daynamen);
-        forecast.appendChild(imagen);
-        forecast.appendChild(temptn);
-        forecast.appendChild(daynament);
-        forecast.appendChild(imagent);
-        forecast.appendChild(temptnt);
+        forecast1.appendChild(daynamen);
+        forecast1.appendChild(imagen);
+        forecast1.appendChild(temptn);
+        forecast2.appendChild(daynament);
+        forecast2.appendChild(imagent);
+        forecast2.appendChild(temptnt);
 
         document.querySelector("div.forecas-days").appendChild(forecast);
+        document.querySelector("div.forecas-days").appendChild(forecast1);
+        document.querySelector("div.forecas-days").appendChild(forecast2);        
       }
     }
   });
