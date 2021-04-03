@@ -53,6 +53,9 @@ fetch(apiOW)
         tempt.textContent = jsObject.daily[d.getDay()].temp.day + " °C";
 
         //Today + 1
+        console.log(d.getDay());
+        console.log(jsObject.daily)
+        console.log(jsObject.daily[i].dt);
         let dia = d.getDay();
 
         if(dia <= 5){
@@ -66,19 +69,23 @@ fetch(apiOW)
         temptn.textContent = jsObject.daily[d.getDay() + 1].temp.day + " °C";
         } else {
           dia = 0;
-          daynamen.textContent = daysa[dia + 1];
+          daynamen.textContent = daysa[dia];
         imagen.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
-            jsObject.daily[dia + 1].weather[0].icon +
+            jsObject.daily[dia].weather[0].icon +
             ".png"
         );
-        temptn.textContent = jsObject.daily[dia + 1].temp.day + " °C";
+        temptn.textContent = jsObject.daily[dia].temp.day + " °C";
         }
 
         //(Today+1)+1
+        console.log(dia);
+        let nextdia = d.getDay();
+        console.log(nextdia);
 
-        if(dia < 5) {
+
+        if(nextdia <= 5) {
           daynament.textContent = daysa[(d.getDay() + 1) + 1];
           imagent.setAttribute(
           "src",
@@ -88,15 +95,15 @@ fetch(apiOW)
           );
           temptnt.textContent = jsObject.daily[(d.getDay() + 1) + 1].temp.day + " °C";
         } else {
-          dia = 0;
-          daynament.textContent = daysa[dia];
+          nextdia = 0;
+          daynament.textContent = daysa[nextdia+1];
           imagent.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
-            jsObject.daily[dia].weather[0].icon +
+            jsObject.daily[nextdia+1].weather[0].icon +
             ".png"
           );
-          temptnt.textContent = jsObject.daily[dia].temp.day + " °C";
+          temptnt.textContent = jsObject.daily[nextdia+1].temp.day + " °C";
         }
 
         forecast.appendChild(daynamet);
