@@ -80,5 +80,25 @@
         margin: .5rem 3rem 0 3rem;
     }
 
+    .contact-information{
+        margin: .5rem 3rem 0 3rem;        
+    }
+
+    .contact-icons{
+        display: flex;
+        justify-content: space-around;        
+    }
+
+    .contact-icons a img{
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    .contact-icons a img:hover{
+        width: 100%;
+        box-shadow: 0px 0px 5px #000000;
+        transition: 1s;
+    }
+
 
 } /*end medium */

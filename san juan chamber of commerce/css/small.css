@@ -108,7 +108,13 @@ nav ul.hide {
     padding: 1rem;
 }
 
-div.container-slider ul, li{
+div.container-slider ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.container-slider li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -352,4 +358,35 @@ div.forecas-days img{
     text-shadow: #678da4;
     border-radius: .5rem;
     transition: 1s;
+}
+
+/*Stylizing Contact Information*/
+
+.contact-information{
+    margin-top: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-information h3{
+    text-align: center;
+}
+
+.contact-information ul{
+    text-align: left;
+    margin: 0 3rem 1rem 3rem;
+}
+
+.contact-icons{
+    text-align: center;
+}
+
+.contact-icons a img{
+    width: 10%;
+    box-shadow: 0px 0px 5px #4b465c;
 }
