@@ -390,3 +390,34 @@ div.forecas-days img{
     width: 10%;
     box-shadow: 0px 0px 5px #4b465c;
 }
+
+/*Stylizing Footer*/
+
+footer{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0 0 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: #4b465c;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.footer1{
+    color:#e9f8ff;
+    text-align: center;
+}
+
+.footer2{
+    color: #e9f8ff;
+    margin: 0 0 .5rem 0;
+    padding: 0;
+}
+
+footer p a{
+    color: #fefefe;
+    text-decoration: none;
+}
