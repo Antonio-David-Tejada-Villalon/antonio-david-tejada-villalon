@@ -421,3 +421,8 @@ footer p a{
     color: #fefefe;
     text-decoration: none;
 }
+
+footer p a:hover{
+    font-size: 1.5rem;
+    transition: 1s;
+}
