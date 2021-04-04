@@ -1,0 +1,69 @@
+{
+	"festivals": [{
+			"month": "January",
+			"name": "Iglesia",
+			"events": [
+				"17 and 18: Semilla and Manzana Popular Festival"
+			]
+		},
+		{
+			"month": "February",
+			"name": [
+				"Iglesia",
+				" San Juan Government"
+			],
+			"events": [
+				"Valles and Cumbres Iglesianas Festival",
+				" Sol's National Festival"
+			]
+		},
+        {
+            "month": "March"
+        },
+        {
+            "month": "April"
+        },
+        {
+            "month": "May"
+        },
+        {
+            "month": "June"
+        },
+        {
+            "month": "July",
+            "name":[
+                "Jachal",
+                " 9 de Julio",
+                " Rawson",
+                " Valle Fértil"
+            ],
+            "events": [
+                "29: Molino Viejo Festival in Huaco - Jachal",
+                " July 9: July 9 Festival",
+                " Carneo Español Festival in Rawson",
+                " Chivo Provincial Festival in Valle Fértil"
+            ]
+        },
+        {
+            "month":"August"
+        },
+        {
+            "month": "September"
+        },
+        {
+            "month": "October"
+        },
+        {
+            "month": "November",
+            "name":[
+                "Jachal"
+            ],
+            "events":[
+                "Tradition Festival"
+            ]
+        },
+        {
+            "month": "December"
+        }
+	]
+}
