@@ -273,6 +273,7 @@ section.festivals h2{
     border: 1px solid #000000;
     border-radius: .5rem;
     box-shadow: 0px 0px 5px #000000;
+    margin-top: .5rem;
 }
 
 .par1, .linea, .slinea, .tlinea{
@@ -425,4 +426,56 @@ footer p a{
 footer p a:hover{
     font-size: 1.5rem;
     transition: 1s;
+}
+
+/*Stylizing sections and divs on city*/
+
+.infography{
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+    padding: .5rem;
+}
+
+hr{
+    width: 50%;
+}
+
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.history div img{
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.history div img:hover{
+    width: 110%;
+    transition: 2s;
+}
+
+.geography{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.geography div img{
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.geography div img:hover{
+    width: 110%;
+    transition: 2s;
+    text-align: center;
 }
