@@ -469,10 +469,22 @@ hr{
     box-shadow: 0px 0px 5px #000000;
 }
 
-.geography div img:hover{
-    width: 110%;
-    transition: 2s;
-    text-align: center;
+.infography a{
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    color: #4b465c;
+    margin: 1rem 0 1rem 0;
+    text-decoration: none;
+}
+
+.infography a:hover{
+    margin: 1rem 9rem 1rem 9rem;
+    background-color: #e9f8ff;
+    color: #000000;
+    text-shadow: #678da4;
+    border-radius: .5rem;
+    transition: 1s;
 }
 
 .nextm{
