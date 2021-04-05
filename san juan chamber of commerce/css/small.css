@@ -165,8 +165,9 @@ ul.slider li div{
 
 ul.slider li h3{
     position: absolute;
+    padding-right: 6rem;
     left: 1rem;
-    top: 20rem;
+    top: 19rem;
     color: #fefefe;
 }
 
