@@ -6,11 +6,11 @@ body{
 
 /*Typefaces*/
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, legend, label, select, option {
     font-family: 'Spartan', sans-serif;
 }
 
-p, nav, a, li{
+p, nav, a, li, input, abbr{
     font-family: 'Amiri', serif;
 }
 
@@ -490,4 +490,54 @@ hr{
 
 .nextm{
     text-align: center;
+}
+
+/*Stylizing Form*/
+
+.ftitle{
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.ft2{
+    color: #000000;
+    text-align: justify;
+    margin: 0 .5rem .5rem .5rem;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+fieldset{
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: .5rem;
+    background-image: url(https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80);
+}
+
+form label.data1{
+    display: block;
+    margin: 1rem 0 1rem;
+    padding: .5rem 0 .5rem;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+form label.data1 input, form label.data1 select{
+    display: block;
+    border-radius: .5rem;
+    color: #1F213D;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+form label.data1 input:required{
+    border-left: red solid .4rem;
+}
+
+form label.data1 input:required:valid{
+    border-left: green solid .4rem;
 }

@@ -66,11 +66,11 @@
       </div>
       <div>
         <h1 class="ftitle">Join Us - Get a Membership</h1>
-        <h2 class="ft2">
+        <p class="ft2">
           Complete this form and become in a member of this San Juan - Chamber of Commerce and get a lot of benefits. 
           If you are a business man, you can send us information of your company, positioning your company among many 
           important others, and create a networking from internal to international commerce.
-        </h2>
+        </p>
       </div>
       <div class="formdiv">
         <form action="GET" action="registration.html">
@@ -78,7 +78,24 @@
             <legend class="title1">Personal Data</legend>
             <label class="data1">First Name*: <input type="text" name="fname" required></label>
             <label class="data1">Last Name*: <input type="text" name="lname" required></label>
+            <label class="data1">Title: <input type="text" name="tlname"></label>
+            <label class="data1">Email*: <input type="email" name="ename" placeholder="noreplay@server.com" required></label>
+            <label class="data1">Cell Phone: <input type="tel" name="phone" placeholder="555-5555"></label>
           </fieldset>
+          <fieldset>
+            <legend class="title1">Business Data</legend>
+            <label class="data1">Business Name*: <input type="text" name="bname" placeholder="Name Company" required></label>
+            <label class="data1">Business Address: <input type="text" name="aname" placeholder="Name Street"></label>
+            <label class="data1">Business Website: <input type="url" name="wname" placeholder="website.com"></label>
+            <label class="data1">Business Description:</label>
+            <label><textarea class="xtxtarea" cols="30" rows="10">Leave your description here ...</textarea></label>
+            <label class="data1">Get a Membership:</label>
+            <label class="lradio"><input type="radio" name="d_bttn" value="100">&nbsp; Non-profit ($100) <abbr title="If you pay $100 to get a membership, you will access to the directory listings.">&#128712;</abbr></label>
+            <label class="lradio"><input type="radio" name="d_bttn" value="200">&nbsp; Bronze ($200) <abbr title="If you pay $200 to get a membership, you will access to the directory listings, and business trainings.">&#128712;</abbr></label>
+            <label class="lradio"><input type="radio" name="d_bttn" value="400">&nbsp; Silver ($400) <abbr title="If you pay $400 to get a membership, you will access to the directory listings, business trainings, social media posts, and luncheon tickets.">&#128712;</abbr></label>
+            <label class="lradio"><input type="radio" name="d_bttn" value="1000">&nbsp; Gold ($1000) <abbr title="If you pay $1000 to get a membership, you will access to the directory listings, business trainings, social media posts, luncheon tickets, and sponsorship with levels of advertising.">&#128712;</abbr></label>
+          </fieldset>
+          <input type="submit" value="Report Business Data" class="sbutton">
         </form>
       </div>
       <div class="contact-information">
