@@ -6,7 +6,7 @@ body{
 
 /*Typefaces*/
 
-h1, h2, h3, h4, h5, legend, label, select, option {
+h1, h2, h3, h4, h5, legend, label, select, option, textarea {
     font-family: 'Spartan', sans-serif;
 }
 
@@ -506,6 +506,12 @@ hr{
     margin: 0 .5rem .5rem .5rem;
 }
 
+.title1{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 abbr{
     text-decoration: none;
 }
@@ -540,4 +546,28 @@ form label.data1 input:required{
 
 form label.data1 input:required:valid{
     border-left: green solid .4rem;
+}
+
+form label.lradio{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+form input.sbutton{
+    font-size: 1rem;
+    color: #e9f8ff;
+    margin: .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: #1F213D;
+}
+
+label textarea.xtxtarea{
+    width: 100%;
+    height: 10rem;
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    color: #000000;
 }
