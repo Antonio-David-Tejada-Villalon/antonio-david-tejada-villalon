@@ -571,3 +571,17 @@ label textarea.xtxtarea{
     border-radius: .5rem;
     color: #000000;
 }
+
+/*Registration page*/
+
+.registertitle{
+    color: #000000;
+    text-align: center;
+    margin: 1rem;
+}
+
+.registertext{
+    color: #000000;
+    text-align: justify;
+    margin: 1rem;
+}
