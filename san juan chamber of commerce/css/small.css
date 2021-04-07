@@ -519,7 +519,7 @@ abbr{
 fieldset{
     border: 1px solid #000000;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: .1rem;
     margin: .5rem;
     background-image: url(https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80);
 }
@@ -562,6 +562,7 @@ form input.sbutton{
     border-radius: .5rem;
     padding: .5rem;
     background-color: #1F213D;
+    cursor: pointer;
 }
 
 label textarea.xtxtarea{
@@ -584,4 +585,92 @@ label textarea.xtxtarea{
     color: #000000;
     text-align: justify;
     margin: 1rem;
+}
+
+/*Directory Page*/
+
+.b0{
+    border: 1px solid #000000;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.b1{
+    width: 30%;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
+    margin-top: .5rem;
+}
+
+.b2, .b3, .b4{
+    margin: .1rem;
+}
+
+.b4{
+    text-decoration: none;
+    color: #4b465c;
+}
+
+/*Cantact page*/
+
+.authory{
+    margin: .5rem;
+    padding: 0;
+    text-align: center;
+    background-color: #678da4;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #4b465c;
+}
+
+.authory h1{
+    margin: .5rem;
+    color: #e9f8ff;
+}
+
+.authory h2{
+    margin: 0;
+}
+
+.authory h5{
+    margin: .5rem;
+}
+
+.staff{
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: #678da4;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #4b465c;
+}
+
+.staff h1{
+    margin: .5rem;
+    color: #e9f8ff;
+}
+
+.staff h2{
+    margin: 0;
+}
+
+.staff h5{
+    margin: .5rem;
+}
+
+.map-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.google-map iframe{
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #000000;
 }

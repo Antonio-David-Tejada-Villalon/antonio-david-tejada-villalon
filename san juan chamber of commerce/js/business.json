@@ -1,0 +1,53 @@
+{
+    "business":[
+        {
+            "name": "Casa Montes",
+            "logo":"casa montes.jpeg",
+            "address":"Pozo de los Algarrobos, San Juan",
+            "phone":" +54 9 264 423-6632",
+            "link":"https://www.facebook.com/bodegacasamontes/"
+        },
+        {
+            "name": "Don Duilio",
+            "logo":"don duilio.png",
+            "address": "Valle de Pedernal, San Juan",
+            "phone": "+54 9 264 405-7793",
+            "link":"https://www.facebook.com/DON-DUILIO-265274226856681/"
+        },
+        {
+            "name":"Dinpe",
+            "logo":"dinpe.jpg",
+            "address":"Ruta 40 S/n, Pocito Aberastain, San Juan",
+            "phone":"+54 9 264 428-1011",
+            "link":"http://dinpe.com.ar/home.html"
+        },
+        {
+            "name":"Barcelo Businesses",
+            "logo":"barcelo empresas.jpg",
+            "address":"Maurín entre Calle 6 y 7, San Juan",
+            "phone":"+54 9 264 428-5883",
+            "link":"https://www.barceloempresas.com.ar/"
+        },
+        {
+            "name":"Agrosoluciones",
+            "logo":"agrosoluciones.png",
+            "address":"Salta Sur 830, San Juan",
+            "phone":"+54 9 264 420-3912",
+            "link":"https://www.agrosolucionessanjuan.com/"
+        },
+        {
+            "name":"Piriz & CIA",
+            "logo":"piriz y cia.png",
+            "address":"9 de Julio Este 1292, San Juan",
+            "phone":"+54 9 264 415-0996",
+            "link":"http://www.pirizycia.com/"
+        },
+        {
+            "name":"Pallets Industries",
+            "logo":"pallets.jpg",
+            "address":"Calle 7 s/n entre R.N 40 y Gral Acha, San Juan",
+            "phone":"+54 9 264 506-2940",
+            "link":"https://www.industriaspalletssrl.com/"
+        }
+    ]
+}
