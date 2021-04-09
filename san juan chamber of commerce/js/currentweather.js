@@ -7,14 +7,19 @@ fetch(apiOW)
     //console.log(jsObject);
     //console.log(jsObject.alert); //there are not alerts in this zone or Json
     const d = new Date();
-    document.getElementById("wcurrent").textContent =
-      jsObject.daily[d.getDate()].weather[0].main +
+    //console.log(d.getDay());
+    //console.log(jsObject.daily[d.getDay()].weather[0].main);
+    //console.log(jsObject.daily[d.getDay()].temp.day);
+    if(d.getDay() <= 7){
+      document.getElementById("wcurrent").textContent =
+      jsObject.daily[d.getDay()].weather[0].main +
       " " +
       jsObject.daily[d.getDay()].temp.day;
     document.getElementById("descriptionw").textContent =
-      jsObject.daily[d.getDate()].weather[0].description;
+      jsObject.daily[d.getDay()].weather[0].description;
     document.getElementById("humidity").textContent =
-      jsObject.daily[d.getDate()].humidity;
+      jsObject.daily[d.getDay()].humidity;
+    }
 
     const daysa = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let c = 0;
@@ -53,9 +58,9 @@ fetch(apiOW)
         tempt.textContent = jsObject.daily[d.getDay()].temp.day + " °C";
 
         //Today + 1
-        console.log(d.getDay());
-        console.log(jsObject.daily)
-        console.log(jsObject.daily[i].dt);
+        //console.log(d.getDay());
+        //console.log(jsObject.daily)
+        //console.log(jsObject.daily[i].dt);
         let dia = d.getDay();
 
         if(dia <= 5){
@@ -80,9 +85,9 @@ fetch(apiOW)
         }
 
         //(Today+1)+1
-        console.log(dia);
+        //console.log(dia);
         let nextdia = d.getDay();
-        console.log(nextdia);
+        //console.log(nextdia);
 
 
         if(nextdia <= 5) {
