@@ -91,8 +91,8 @@ fetch(apiOW)
 
 
         if(nextdia < 5) {
-          console.log(daysa[(d.getDay())+1]);
-          daynament.textContent = daysa[(d.getDay() + 1)];
+          console.log(daysa[(d.getDay()+1)+1]);
+          daynament.textContent = daysa[(d.getDay() + 1)+1];
           imagent.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
@@ -112,7 +112,7 @@ fetch(apiOW)
           );
           temptnt.textContent = jsObject.daily[nextdia].temp.day + " °C";
         } else if(nextdia == 6){
-          nextdia = 1;
+          nextdia = 0;
           console.log(daysa[nextdia+1]);
           daynament.textContent = daysa[nextdia+1];
           imagent.setAttribute(
