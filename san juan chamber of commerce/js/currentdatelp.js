@@ -47,7 +47,7 @@ document.getElementById("currentyear").textContent = d.getFullYear();
 //     /*document.getElementById("banner").style.display = "flex";*/
 //     document.getElementById("banner").style.textAlign = "center";
 
-// }
+//}
 
 const lastmodification = document.querySelector('#time');
 lastmodification.textContent = document.lastModified;

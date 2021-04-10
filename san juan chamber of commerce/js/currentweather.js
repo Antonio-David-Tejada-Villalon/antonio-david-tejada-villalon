@@ -87,11 +87,12 @@ fetch(apiOW)
         //(Today+1)+1
         //console.log(dia);
         let nextdia = d.getDay();
-        //console.log(nextdia);
+        console.log(nextdia);
 
 
-        if(nextdia <= 5) {
-          daynament.textContent = daysa[(d.getDay() + 1) + 1];
+        if(nextdia < 5) {
+          console.log(daysa[(d.getDay())+1]);
+          daynament.textContent = daysa[(d.getDay() + 1)];
           imagent.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
@@ -99,12 +100,24 @@ fetch(apiOW)
             ".png"
           );
           temptnt.textContent = jsObject.daily[(d.getDay() + 1) + 1].temp.day + " °C";
-        } else {
+        } else if(nextdia == 5){
           nextdia = 0;
-          daynament.textContent = daysa[nextdia+1];
+          console.log(daysa[nextdia]);
+          daynament.textContent = daysa[nextdia];
           imagent.setAttribute(
           "src",
           "https://openweathermap.org/img/w/" +
+            jsObject.daily[nextdia].weather[0].icon +
+            ".png"
+          );
+          temptnt.textContent = jsObject.daily[nextdia].temp.day + " °C";
+        } else if(nextdia == 6){
+          nextdia = 1;
+          console.log(daysa[nextdia+1]);
+          daynament.textContent = daysa[nextdia+1];
+          imagent.setAttribute(
+            "src",
+            "https://openweathermap.org/img/w/" +
             jsObject.daily[nextdia+1].weather[0].icon +
             ".png"
           );
